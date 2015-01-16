@@ -7,7 +7,7 @@ Load the following terrain map:
 <div align="center">
 <img src="https://cloud.githubusercontent.com/assets/1221480/5770089/20223c9a-9ceb-11e4-8d7c-75abfd63f901.png">
 <br/>
-*terrain.png*
+<i>terrain.png</i>
 </div>
 
 Let's treat each pixel as a possible state. Let's say that each pixel can be
@@ -25,7 +25,7 @@ any superfluous primates:
 <div align="center">
 <img src="https://cloud.githubusercontent.com/assets/1221480/5770098/400ceb0e-9ceb-11e4-8486-8a419d803208.png">
 <br/>
-*contour.png*
+<i>contour.png</i>
 </div>
 
 
@@ -42,5 +42,5 @@ Output: path.png
 <div align="center">
 <img src="https://cloud.githubusercontent.com/assets/1221480/5770090/254ae21c-9ceb-11e4-88df-af74e7de5044.png">
 <br/>
-*path.png*
+<i>path.png</i>
 </div>
