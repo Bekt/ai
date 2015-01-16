@@ -16,7 +16,7 @@ def bfs(start, goal, nodes, img):
         if item.x == goal[0] and item.y == goal[1]:
             return item, i
         if i % 5000 < 1000:
-            pix[item.x, item.y] = (0, 255, 0, 255)
+            pix[item.y, item.x] = (0, 255, 0, 255)
         for step in [(item.x+1, item.y), (item.x-1, item.y),
                      (item.x, item.y+1), (item.x, item.y-1)]:
             x, y = step
@@ -24,7 +24,7 @@ def bfs(start, goal, nodes, img):
                     and step not in visited):
                 visited.add(step)
                 node = Node(parent=item, x=x, y=y,
-                            cost=item.cost + pix[x, y][2])
+                            cost=item.cost + pix[y, x][2])
                 nodes[step] = node
                 heappush(pq, (node.cost, id(node), node))
             i += 1

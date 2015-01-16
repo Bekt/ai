@@ -40,7 +40,7 @@ Iterations: 903708
 Output: path.png
 ```
 <div align="center">
-<img src="https://cloud.githubusercontent.com/assets/1221480/5770090/254ae21c-9ceb-11e4-88df-af74e7de5044.png">
+<img src="https://cloud.githubusercontent.com/assets/1221480/5771082/96e6f0fe-9cfb-11e4-9f60-7230093000af.png">
 <br/>
 <i>path.png</i>
 </div>
