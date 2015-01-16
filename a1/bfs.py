@@ -5,7 +5,7 @@ from PIL import Image
 from types import SimpleNamespace as Node
 
 
-def bfs(start, goal, nodes, img):
+def bfs(start, goal, img):
     pq = []
     heappush(pq, (start.cost, id(start), start))
     pix = img.load()
@@ -25,10 +25,8 @@ def bfs(start, goal, nodes, img):
                 visited.add(step)
                 node = Node(parent=item, x=x, y=y,
                             cost=item.cost + pix[y, x][2])
-                nodes[step] = node
                 heappush(pq, (node.cost, id(node), node))
             i += 1
-    return None
 
 
 def path(node, img):
@@ -41,10 +39,7 @@ def path(node, img):
 def main(filename, s_x, s_y, e_x, e_y):
     img = Image.open(filename)
     start = Node(parent=None, x=s_x, y=s_y, cost=0)
-    nodes = {
-        (start.x, start.y): start
-    }
-    goal, iters = bfs(start, (e_x, e_y), nodes, img)
+    goal, iters = bfs(start, (e_x, e_y), img)
     path(goal, img)
     img.save('path.png')
     print('Cost: %d' % goal.cost)
