@@ -36,11 +36,11 @@ The path with the lowest cost has a cost of **65844**.
 ```bash
 $ python3 bfs.py terrain.png 100 100 400 400
 Cost: 65844
-Iterations: 903708
+Iterations: 225927
 Output: path.png
 ```
 <div align="center">
-<img src="https://cloud.githubusercontent.com/assets/1221480/5771082/96e6f0fe-9cfb-11e4-9f60-7230093000af.png">
+<img src="https://cloud.githubusercontent.com/assets/1221480/5771170/56bf1720-9cfd-11e4-9f61-24b2ee7c0934.png">
 <br/>
 <i>path.png</i>
 </div>

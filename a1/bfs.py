@@ -26,7 +26,7 @@ def bfs(start, goal, img):
                 node = Node(parent=item, x=x, y=y,
                             cost=item.cost + pix[y, x][2])
                 heappush(pq, (node.cost, id(node), node))
-            i += 1
+        i += 1
 
 
 def path(node, img):
