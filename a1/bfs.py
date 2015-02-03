@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
-
 from heapq import (heappush, heappop)
-from PIL import Image
 from types import SimpleNamespace as Node
+from PIL import Image
 
 
 def bfs(start, goal, img):
